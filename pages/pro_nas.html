@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+   <meta http-equiv="x-ua-compatible" content="ie=edge" />
+   <!-- Font Awesome -->
+   <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>-->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+   <!--custom styles-->
+   <link rel="stylesheet" href="../css/style.min.css" />
+   <meta name="description" content="Магазин косметики" />
+   <meta name="keywords" content="" />
+   <meta name="google" content="notranslate" />
+   <meta name="author" content="Roman Coder" />
+   <meta name="robots" content="index, follow" />
+   <!--fav icon-->
+   <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+   <link rel="manifest" href="../img/favicon/site.webmanifest">
+   <link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+   <meta name="msapplication-TileColor" content="#2b5797">
+   <meta name="theme-color" content="#ffffff">
+   <!--disable format detection (iPhone / IPod / IPad) -->
+   <meta name="format-detection" content="telephone=no" />
+   <!--BlackBerry-->
+   <meta http-equiv="x-rim-auto-match" content="none" />
+   <title>Beauty&commat; &mdash; Про нас</title>
+</head>
+<body>
+   <!--header block-->
+   <header class="header" id="header">
+      <!--header__baner-->
+      <section class="header__baner">
+         <div class="container">
+            <div class="header__baner--row">
+               <h3>
+                  Купуй одним чеком на суму від 2500 грн та отримуй 
+                  PLASMA MASK, 500 ml 💝ПОДАРУНОК💝  
+                  АКЦІЯ ДІЄ ДО ЗАКІНЧЕННЯ ТОВАРУ НА СКЛАДІ !
+               </h3>
+            </div><!--/.row-->
+         </div><!--/.container-->
+      </section><!--/.header__baner-->
+      <!--header menu-->
+      <nav class="header__menu">
+         <div class="container">
+            <div class="header__menu--row">
+               <ul class="nav__menu">
+                  <li class="nav__menu--item">
+                     <a href="catalog.html" class="nav__menu--link">Каталог</a>
+                  </li>
+                  <li class="nav__menu--item">
+                     <a href="pro_nas.html" class="nav__menu--link">Про нас</a>
+                  </li>
+                  <li class="nav__menu--item">
+                     <a href="dostavka.html" class="nav__menu--link">Оплата і доставка</a>
+                  </li>
+                  <li class="nav__menu--item">
+                     <a href="obmin.html" class="nav__menu--link">Обмін та повернення</a>
+                  </li>
+                  <li class="nav__menu--item">
+                     <a href="ugoda.html" class="nav__menu--link">Угода користувача</a>
+                  </li>
+                  <li class="nav__menu--item">
+                     <a href="contact.html" class="nav__menu--link">Контактна інформація</a>
+                  </li>
+                  <li class="nav__menu--item">
+                     <a href="akcii.html" class="nav__menu--link">Акції та знижки</a>
+                  </li>
+               </ul><!--/.-->
+               <div class="nav__login">
+                  <div class="burger__btn">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                  </div><!--/.burger-->
+                  <a class="nav__login--popup" href="#js/modal.js">
+                     <i class="fas fa-user"></i>
+                     <span>Вхід</span>
+                  </a>
+               </div><!--/.nav__login-->
+            </div><!--/.row-->
+         </div><!--/.container-->
+      </nav><!--/.header__menu-->
+      <!--header brand-->
+      <section class="header__brand">
+         <div class="container">
+            <div class="header__brand--row">
+               <div class="navbar__brand">
+                  <a href="../index.html">
+                     <picture>
+                        <source srcset="../img/logo/logo.webp" type="image/webp">
+                        <img src="../img/logo/logo.png" alt="logo" class="img">
+                     </picture>
+                  </a>
+               </div><!--/.navbar__brand-->
+               <div class="navbar__content">
+                  <div class="navbar__content--phone">
+                     <i class="fas fa-phone-square-alt"></i>
+                     <a href="tel:+380500502200" >050 050 22 00</a>
+                  </div><!--/.phone-->
+                  <div class="navbar__content--time">
+                     <p>
+                        <i class="fas fa-clock"></i>
+                        <span>Графік роботи:</span>
+                     </p>
+                     <p>Пн&ndash;Пт &mdash; 10:00 &ndash; 18:00</p>
+                     <p>Сб&ndash;Нд &mdash; 11:00 &ndash; 17:00</p>
+                  </div><!--/.time-->
+                  <a href="basket.html" class="navbar__content--basket">
+                     <i class="fas fa-shopping-cart"></i>
+                     <p id="basketCount">00</p>
+                  </a><!--/.basket-->
+               </div><!--/.navbar__content-->
+            </div><!--/.row-->
+         </div><!--/.container-->
+      </section><!--header__brand-->
+      <!--header cat-->
+      <section class="header__product">
+         <div class="container">
+            <div class="header__product--row">
+               <ul class="product__menu">
+                  <li class="product__menu--item">
+                     <a href="catalog.html" class="product__menu--link">Шампуні</a>
+                  </li>
+                  <li class="product__menu--item">
+                     <a href="catalog.html" class="product__menu--link">Кондиціонери</a>
+                  </li>
+                  <li class="product__menu--item">
+                     <a href="catalog.html" class="product__menu--link">Термозахист</a>
+                  </li>
+                  <li class="product__menu--item">
+                     <a href="catalog.html" class="product__menu--link">Трихологія</a>
+                  </li>
+                  <li class="product__menu--item">
+                     <a href="catalog.html" class="product__menu--link">Набори</a>
+                  </li>
+                  <li class="product__menu--item">
+                     <a href="catalog.html" class="product__menu--link">Догляд за тілом</a>
+                  </li>
+                  <li class="product__menu--item">
+                     <a href="catalog.html" class="product__menu--link">Чоловіча серія</a>
+                  </li>
+                  <li class="product__menu--item">
+                     <a href="catalog.html" class="product__menu--link">Аксесуари</a>
+                  </li>
+               </ul><!--/.product__menu-->
+            </div><!--/.row-->
+         </div><!--/.container-->
+      </section><!--/.header__product-->
+   </header><!--/.header-->
+   <main>
+      <!--intro section-->
+      <section class="intro">
+         <div class="intro__row">
+            <div class="intro__slider" id="introSlider">
+               <picture>
+                  <source srcset="../img/intro/baner1.webp" type="image/webp">
+                  <img src="../img/intro/baner1.jpg" alt="logo" class="img">
+               </picture>
+               <picture>
+                  <source srcset="../img/intro/baner.webp" type="image/webp">
+                  <img src="../img/intro/baner.jpg" alt="logo" class="img">
+               </picture>
+            </div><!--/.intro__slider-->
+            <a class="intro__link" href="catalog.html"></a>
+         </div><!--/.intro__row-->
+      </section><!--/.intro-->
+      <!--about me block-->
+      <section class="about__me">
+         <div class="container">
+            <div class="about__me--row">
+               <div class="me__title">
+                  <h3>
+                     Про нас
+                  </h3>
+               </div><!--/.me__title-->
+               <div class="me__text">
+                  <p>
+                     Beauty Cosmetic — це гордий український бренд, що працює 
+                     з вашим волоссям на повну силу. Ми cтворили догляд, який 
+                     стане фундаментом здоров'я та розкішного вигляду вашого 
+                     волосся. Лінійки наших продуктів створені, аби задовольнити 
+                     індивідуальні потреби із різними типами волосся і 
+                     ми продовжуємо працювати над новими лінійками 
+                     засобів від Full Force.
+                  </p>
+               </div><!--/.me__text-->
+               <ul class="me__list">
+                  <p class="text__center">
+                     Наші цінності
+                  </p>
+                  <li>
+                     <p>
+                        <span>Ми — екологічно свідомий бренд.</span> Ми не тестуємо наш продукт на 
+                        тваринах і не співпрацюємо з постачальниками, які це досі роблять. Ми 
+                        використовуємо лише безпечні органічні сполуки у наших продуктах. 
+                        Ми максимально оптимізували наше виробництво, аби не шкодити 
+                        довкіллю й зменшити кількість пластику під час створення продукту.
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <span>Ми — український бренд.</span> Ми підтримаємо українських майстрів 
+                        у навчанні і розвитку та вже представляємо нашу країну за кордоном.
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <span>Ми — за відкритість.</span> Тому готові до прямого спілкування і 
+                        намагаємося побудувати професійну спільноту майстрів, що підтримують один одного.
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <span>Ми — за доказовість.</span> Наука розвивається швидко і 
+                        ми беремо на озброєння новітні технології та досягнення 
+                        вже зараз. Серед наших інгредієнтів — лише перевірені 
+                        ефективні сполуки, дія яких науково обґрунтована.
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <span>Ми — за здорові амбіції.</span> Ми маємо багато планів та мрій і 
+                        над деякими ми працюємо прямо зараз. Тож лінійки від Full Force 
+                        розширюватимуться постійно. Ми дослухаємось до потреб майстрів, 
+                        що обрали наш продукт, при розробці нових одиниць.
+                     </p>
+                  </li>
+                  <li>
+                     <p>
+                        <span>
+                           Ми не спіпрацюємо із країною-агресором та не реалізуємо 
+                           свої продукти на її території!
+                        </span>
+                     </p>
+                  </li>
+               </ul><!--/.me__list-->
+            </div><!--/.row-->
+         </div><!--/.container-->
+      </section><!--/.about__me-->
+      <!--about us section-->
+      <section class="about__us about__us--proNus">
+         <div class="container">
+            <div class="aout__us--row">
+               <div class="about__title">
+                  <h2>
+                     офіційний дистрибютор професійної косметики, made in UA!
+                  </h2>
+               </div><!--/.about__title-->
+               <div class="block__text">
+                  <div class="block__text--title">
+                     <h3>
+                        Філософія нашого бренду — це шлях до естетики через оздоровлення.
+                     </h3>
+                  </div><!--/.title-->
+                  <div class="block__text--text">
+                     <p>
+                        Саме працюючи зі структурою кожної волосини та шкірою голови, ми надаємо волоссю розкішного вигляду, сприяємо його 
+                        відновленню та будуємо фундамент, щоб й надалі ваше волосся було здоровим і доглянутим.
+                     </p>
+                     <p>
+                        В основі наших продуктів — натуральні 
+                        складники та новітні розробки:
+                     </p>
+                     <p>
+                        Шовковий гель. Тобто пептидний комплекс, 
+                        до якого входять спайдер-пептиди та B-Silk Protein 
+                        (запатентований біологічний поліпептид шовку). 
+                        Комплекс імітує амінокислотний склад павутини, 
+                        забезпечує шовковисту м’якість і захист, 
+                        створюючи гнучку плівку й не обтяжуючи волосся. 
+                        Його властивості значно перевершують силіконові 
+                        еластомери, які зазвичай використовують у догляді за волоссям.
+                     </p>
+                     <p>
+                        Рідка кутикула. Містить актив SEPICAP MP, 
+                        утворений шляхом з’єднання жирних кислот з 
+                        амінокислотами, які є поживною речовиною 
+                        лімфатичного капіляра, з додаванням суміші з 
+                        провітаміну В5 (пантенолу) та водорозчинного 
+                        силікону. Водорозчинний силікон дає змогу 
+                        активній речовині утримуватися на волосині, 
+                        а амфіфільна речовина сприяє глибокому проникненню 
+                        активних компонентів у волосся.
+                     </p>
+                     <p>
+                        Амінокислотний комплекс Prodew 500. Розробка 
+                        японської компанії Ajinomoto, виробника високоефективних 
+                        косметичних інгредієнтів. Поєднання амінокислот зволожує, 
+                        збільшує еластичність, відновлює мікропошкодження та 
+                        робить волосся стійкішим.
+                     </p>
+                     <p>
+                        Система зміцнення GREENPLEX. Інноваційний на 100 % 
+                        рослинний комплекс відновлює волосся, пошкоджене 
+                        хімічним та механічним чином. Має надзвичайну регенерувальну дію.
+                     </p>
+                     <p>
+                        Комплекс рисових пептидів Vegetamide 18MEA-R. Відновлює 
+                        структуру пошкодженого волосся, сприяє подальшому захисту, має гідрофобний ефект.
+                     </p>
+                     <p>
+                        Кожен засіб є авторською розробкою і має свою 
+                        особливу формулу, що задовольняє індивідуальні 
+                        потреби різних типів волосся. Фаворитом нашого 
+                        бренду є система #power_boost_system, яка 
+                        підсилює маски активами для максимального 
+                        відновлення та наповнення структури волосини. 
+                        Ми пропонуємо лінійки для салонного та 
+                        домашнього догляду й далі працюємо над 
+                        новими лінійками від Full Force.
+                     </p>
+                  </div><!--/.text-->
+               </div><!--/.block__text-->
+               <div class="block__text">
+                  <div class="block__text--title">
+                     <h4>
+                        ОЧИЩЕННЯ + ДОГЛЯД
+                     </h4>
+                  </div><!--/.title-->
+                  <div class="block__text--text text__center">
+                     <p>
+                        Професійні шампуні, бальзами та маски Full Force 
+                        підходять як для салонного, так і для домашнього 
+                        догляду. Ми створили щоденний шампунь для всіх типів шкіри, особливий 
+                        зволожувальний шампунь для лагідного очищення та крем-шампунь для 
+                        кучерів. Наші бальзами піклуються про волосся під час щоденного 
+                        догляду, а також про волосся, що має особливі потреби: фарбоване, пошкоджене 
+                        чи сухе. Маски та баттер-маски Full Force мають не лише одразу 
+                        помітний результат, а і сприяють відновленню та наповненню 
+                        кожної волосини. Вони надають блиск, силу вашому волоссю й, залежно 
+                        від продукту, розгладжують полотно або навпаки, підтримують ваші 
+                        кучері в природній доглянутій формі.
+                     </p>
+                  </div><!--/.text-->
+               </div><!--/.block__text-->
+               <div class="block__text">
+                  <div class="block__text--title">
+                     <h4>
+                        НЕЗМИВНИЙ ТЕРМОЗАХИСНИЙ ДОГЛЯД
+                     </h4>
+                  </div><!--/.title-->
+                  <div class="block__text--text text__center">
+                     <p>
+                        Запобігти пошкодженню завжди легше, ніж відновлювати 
+                        спалене волосся після домашнього вирівнювання чи 
+                        підкручення плойкою. Тому ми створили серію засобів 
+                        із термозахистом, щоб ваше волосся залишалося здоровим 
+                        та блискучим, навіть після температурних випробувань. 
+                        Наші спреї, креми та олії-флюїд із цієї лінійки дбають 
+                        про ваше волосся, роблять його блискучим по всій довжині, 
+                        сприяють легкому розчісуванню та добре комбінуються з 
+                        термостайлерами під час сушіння феном чи брашем. 
+                        Можна використовувати в салоні та вдома.
+                     </p>
+                  </div><!--/.text-->
+               </div><!--/.block__text-->
+               <div class="block__text">
+                  <div class="block__text--title">
+                     <h4>
+                     БУСТЕРНА СИСТЕМА РЕКОНСТРУКЦІЇ ВОЛОССЯ
+                     </h4>
+                  </div><!--/.title-->
+                  <div class="block__text--text text__center">
+                     <p>
+                        Ця лінійка засобів розроблена виключно для салонних 
+                        процедур. ЇЇ вже обрали для себе майстри з 
+                        України, Польщі, Німеччини, Кіпру, Ірландії 
+                        та Ізраїлю і наша географія розширюється. 
+                        Power-бустери Full Force створені для 
+                        підсилення масок, та використання в чистому вигляді під час 
+                        процедур відновлення хімічно та механічно пошкодженого волосся, 
+                        його протезування та процедур детоксу. Процедури з їхнім 
+                        використанням мають винятковий ефект до / після. Це відновлене 
+                        полотно, дзеркальний блиск, максимальне наповнення волосся по всій довжині.
+                     </p>
+                  </div><!--/.text-->
+               </div><!--/.block__text-->
+               <div class="block__text">
+                  <div class="block__text--title">
+                     <h4>
+                        ЗАСОБИ ДЛЯ МАСЛЯНОГО ОБГОРТУВАННЯ
+                     </h4>
+                  </div><!--/.title-->
+                  <div class="block__text--text text__center">
+                     <p>
+                        Процедура, що змінила уявлення про потенціал сухого 
+                        та пористого волосся та одна з найпопулярніших послуг у майстрів, що 
+                        працюють з Full Force. Концентрована формула гідрофільних олій, що за 
+                        своїм жиро-кислотним складом підходять для відновлення ліпідного 
+                        профілю волосся. До складу засобів входять олії авокадо та виноградних, 
+                        абрикосових кісточок, олія макадамії, зародків пшениці, мигдалю та ефірні 
+                        олії бергамоту та розмарину. Підходить для догляду за кучерями.
+                     </p>
+                  </div><!--/.text-->
+               </div><!--/.block__text-->
+               <div class="block__text">
+                  <div class="block__text--title">
+                     <h4>
+                        ТРИХОЛОГІЧНА ЛІНІЙКА ДЛЯ ОЗДОРОВЛЕННЯ ШКІРИ ГОЛОВИ ТА ЛІКУВАННЯ ВИПАДІННЯ ВОЛОССЯ
+                     </h4>
+                  </div><!--/.title-->
+                  <div class="block__text--text text__center">
+                     <p>
+                        Маски, шампуні та лосьйони із цієї серії варто використовувати 
+                        лише після консультації зі спеціалістом. Вони допомагають 
+                        врівноважити секрецію шкірних залоз, борються з лупою, очищають 
+                        шкіру голови від верхнього ороговілого шару клітин. Усе це сприяє 
+                        нормалізації стану шкіри, покращує кровообіг, стимулює живлення 
+                        волосся. Наші лосьйони від випадіння та для росту волосся містять 
+                        ефірні олії грейпфрута, чайного дерева та евкаліпту, екстракт дріжджів, 
+                        серено повзучої, глікопротеїнів і полісахаридів, виділених із бобів сої, 
+                        олігоелементів, поліпептидів та комплексу вітамінів. Це дозволяє працювати 
+                        безпосередньо з волосяною цибулиною, що пробуджує життєву силу 
+                        коренів волосся. Також ми пропонуємо кислотні пілінги з АНА, BHA, 
+                        PHA кислотами для шкіри голови, що запускають відновлювальні процеси 
+                        та рекомендовані при надмірній жировій секреції.
+                     </p>
+                  </div><!--/.text-->
+               </div><!--/.block__text-->
+            </div><!--/.row-->
+         </div><!--/.container-->
+      </section><!--/.about__us-->
+   </main>
+   <!--footer-->
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__row">
+            <div class="footer__brand">
+               <div class="footer__brand--logo">
+                  <p>Beauty</p>
+                  <p>Cosmetic</p>
+               </div><!--/.img-->
+               <div class="footer__brand--copy">
+                  &copy; 2023 &mdash; <script>document.write(new Date().getFullYear());</script> BeautyCosmetic<br>
+                  Всі права захищено
+               </div><!--/.copy-->
+            </div><!--/.footer__brand-->
+            <div class="footer__catalog">
+               <div class="footer__catalog--title">
+                  <h3>
+                     Каталог
+                  </h3>
+               </div><!--/.title-->
+               <ul class="footer__catalog--menu">
+                  <li>
+                     <a href="catalog.html">Шампуні</a>
+                  </li>
+                  <li>
+                     <a href="catalog.html">Кондиціонери</a>
+                  </li>
+                  <li>
+                     <a href="catalog.html">Термозахист</a>
+                  </li>
+                  <li>
+                     <a href="catalog.html">Трихологія</a>
+                  </li>
+                  <li>
+                     <a href="catalog.html">Лосьйони для шкіри голови</a>
+                  </li>
+                  <li>
+                     <a href="catalog.html">Догляд за тілом</a>
+                  </li>
+                  <li>
+                     <a href="catalog.html">Чоловіча серія </a>
+                  </li>
+                  <li>
+                     <a href="catalog.html">Серія для кудрявого волосся</a>
+                  </li>
+                  <li>
+                     <a href="catalog.html">Косметика</a>
+                  </li>
+                  <li>
+                     <a href="catalog.html">Аксесуари</a>
+                  </li>
+                  <li>
+                     <a href="catalog.html">Подарункові сертифікати</a>
+                  </li>
+               </ul><!--/.menu-->
+            </div><!--/.footer__catalog-->
+            <div class="footer__menu">
+               <div class="footer__menu--title">
+                  <h3>
+                     Меню
+                  </h3>
+               </div><!--/.title-->
+               <ul class="footer__menu--menu">
+                  <li>
+                     <a href="pages/catalog.html">Каталог</a>
+                  </li>
+                  <li>
+                     <a href="pages/pro_nas.html">Про нас</a>
+                  </li>
+                  <li>
+                     <a href="pages/dostavka.html">Оплата і доставка</a>
+                  </li>
+                  <li>
+                     <a href="pages/obmin.html">Обмін та повернення</a>
+                  </li>
+                  <li>
+                     <a href="pages/ugoda.html">Угода користувача</a>
+                  </li>
+                  <li>
+                     <a href="pages/contact.html">Контактна інформація</a>
+                  </li>
+                  <li>
+                     <a href="pages/akcii.html">Акції та знижки</a>
+                  </li>
+               </ul>
+            </div><!--/.footer__menu-->
+            <div class="footer__contact">
+               <div class="footer__contact--title">
+                  <h3>
+                     Контакти
+                  </h3>
+               </div><!--/.title-->
+               <div class="footer__contact--adres">
+                  <div class="adres__phone">
+                     <i class="fas fa-phone-square-alt"></i>
+                     <a href="tel:+380500502200">050 050 22 00</a>
+                  </div><!--/.adres__phone-->
+                  <div class="adres__telegram">
+                     <i class="fab fa-telegram"></i>
+                     <a href="https://t.me/beauty__shop">@beauty__shop</a>
+                  </div><!--/.adres__telegram-->
+                  <div class="adres__mail">
+                     <i class="fas fa-envelope"></i>
+                     <a href="mailto:beauty@example.com">beauty@example.com</a>
+                  </div><!--/.adres__mail-->
+                  <div class="adres__map">
+                     <i class="fas fa-map-marker-alt"></i>
+                     <span>Івано - Франківська обл. м. Бурштин</span>
+                  </div><!--/.adres__map-->
+                  <div class="adres__social">
+                     <p>Ми в соц мережах:</p>
+                     <a href="https://facebook.com" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                     </a>
+                     <a href="https://instagram.com" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                     </a>
+                  </div><!--/.adres__social-->
+               </div><!--/.adres-->
+            </div><!--/.footer__contact-->
+         </div><!--/.footer__row-->
+      </div><!--/.container-->
+   </footer><!--/.footer-->
+   <!--back top btn-->
+   <div class="back__top" id="backTop">
+      <div class="back__top--content">
+         <span>Вгору</span>
+         <i class="fas fa-chevron-up"></i>
+      </div><!--content-->
+   </div><!--/.back__top-->
+   <!--libs js conected-->
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+   <script>window.jQuery || document.write('<script src="../js/vendor/jquery-3.4.1.min.js"><\/script>');</script>
+   <!--slick slider https://kenwheeler.github.io/slick/ -->
+   <script src="../js/vendor/slick.min.js"></script>
+   <!-- main script -->
+   <script src="../js/main.js"></script>
+</body>
+</html>

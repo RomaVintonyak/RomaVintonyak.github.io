@@ -36,9 +36,8 @@
          <div class="container">
             <div class="header__baner--row">
                <h3>
-                  Купуй одним чеком на суму від 2500 грн та отримуй 
-                  PLASMA MASK, 500 ml 💝ПОДАРУНОК💝  
-                  АКЦІЯ ДІЄ ДО ЗАКІНЧЕННЯ ТОВАРУ НА СКЛАДІ !
+                  Купуй одним чеком на суму від 2500 грн. 
+                  та отримуй подарунок 🎁 на суму від 250 грн.
                </h3>
             </div><!--/.row-->
          </div><!--/.container-->
@@ -77,7 +76,7 @@
                      <span></span>
                      <span></span>
                   </div><!--/.burger-->
-                  <a class="nav__login--popup" href="#js/modal.js">
+                  <a class="_popup nav__login--popup" href="#">
                      <i class="fas fa-user"></i>
                      <span>Вхід</span>
                   </a>
@@ -127,25 +126,25 @@
                      <a href="catalog.html" class="product__menu--link">Шампуні</a>
                   </li>
                   <li class="product__menu--item">
+                     <a href="catalog.html" class="product__menu--link">Маски</a>
+                  </li>
+                  <li class="product__menu--item">
                      <a href="catalog.html" class="product__menu--link">Кондиціонери</a>
                   </li>
                   <li class="product__menu--item">
                      <a href="catalog.html" class="product__menu--link">Термозахист</a>
                   </li>
                   <li class="product__menu--item">
-                     <a href="catalog.html" class="product__menu--link">Трихологія</a>
-                  </li>
-                  <li class="product__menu--item">
                      <a href="catalog.html" class="product__menu--link">Набори</a>
                   </li>
                   <li class="product__menu--item">
-                     <a href="catalog.html" class="product__menu--link">Догляд за тілом</a>
+                     <a href="catalog.html" class="product__menu--link">Олії</a>
+                  </li>
+                  <li class="product__menu--item">
+                     <a href="catalog.html" class="product__menu--link">Ампули</a>
                   </li>
                   <li class="product__menu--item">
                      <a href="catalog.html" class="product__menu--link">Чоловіча серія</a>
-                  </li>
-                  <li class="product__menu--item">
-                     <a href="catalog.html" class="product__menu--link">Аксесуари</a>
                   </li>
                </ul><!--/.product__menu-->
             </div><!--/.row-->
@@ -287,31 +286,31 @@
                      <a href="catalog.html">Шампуні</a>
                   </li>
                   <li>
+                     <a href="catalog.html">️Маски</a>
+                  </li>
+                  <li>
                      <a href="catalog.html">Кондиціонери</a>
                   </li>
                   <li>
                      <a href="catalog.html">Термозахист</a>
                   </li>
                   <li>
-                     <a href="catalog.html">Трихологія</a>
+                     <a href="catalog.html">Набори</a>
                   </li>
                   <li>
-                     <a href="catalog.html">Лосьйони для шкіри голови</a>
+                     <a href="catalog.html">Олії</a>
                   </li>
                   <li>
-                     <a href="catalog.html">Догляд за тілом</a>
+                     <a href="catalog.html">Ампули</a>
                   </li>
                   <li>
-                     <a href="catalog.html">Чоловіча серія </a>
+                     <a href="catalog.html">Чоловіча серія</a>
                   </li>
                   <li>
-                     <a href="catalog.html">Серія для кудрявого волосся</a>
+                     <a href="catalog.html">Гребінці</a>
                   </li>
                   <li>
                      <a href="catalog.html">Косметика</a>
-                  </li>
-                  <li>
-                     <a href="catalog.html">Аксесуари</a>
                   </li>
                   <li>
                      <a href="catalog.html">Подарункові сертифікати</a>
@@ -365,7 +364,7 @@
                   </div><!--/.adres__telegram-->
                   <div class="adres__mail">
                      <i class="fas fa-envelope"></i>
-                     <a href="mailto:beautycosmetics1006@gmail.com">beautycosmetics1006@gmail.com</a>
+                     <a href="mailto:beautycosmetics3007@gmail.com">beautycosmetics3007@gmail.com</a>
                   </div><!--/.adres__mail-->
                   <div class="adres__map">
                      <i class="fas fa-map-marker-alt"></i>
@@ -389,6 +388,113 @@
          <i class="fas fa-chevron-up"></i>
       </div><!--content-->
    </div><!--/.back__top-->
+   <!--modal window-->
+   <div class="modal" id="modal">
+      <div class="modal__mask">
+         <div class="modal__content">
+            <div class="modal__content--close">
+               <button type="button" id="modalClose">
+                  <i class="fas fa-times"></i>
+               </button>
+            </div><!--/.close-->
+            <div class="modal__content--tabs">
+               <button type="button" class="_login switch__tabs switch__tabs--active">Вхід</button>
+               <button type="button" class="_register switch__tabs">Реєстрація</button>
+            </div><!--/.-->
+            <div class="modal__content--body">
+               <div class="modal__login modal__login--active">
+                  <form data-action="#" id="loginForm" class="login__form">
+                     <div class="login__form--block">
+                        <label for="emailAuth">Е-пошта</label>
+                        <input type="email" id="emailAuth" name="emailAuth">
+                        <p class="error__mail--auth">Введіть коректну email адресу...</p>
+                     </div><!--/.block-->
+                     <div class="login__form--block">
+                        <label for="paswordAuth">Пароль</label>
+                        <input type="password" id="paswordAuth" name="paswordAuth">
+                        <p class="error__password--auth">Вкажіть пароль (не менше 10 символів)</p>
+                     </div><!--/.block-->
+                     <div class="login__form--button">
+                        <button id="sendAuth" type="button">
+                           Відправити
+                           <i class="fas fa-paper-plane"></i>
+                        </button>
+                        <button id="recoverPass" type="button">
+                           Забули пароль?
+                        </button>
+                     </div><!--/.button-->
+                  </form><!--/.login__form-->
+               </div><!--/.modal__login-->
+               <div class="modal__register">
+                  <form data-action="#" id="registerForm" class="register__form">
+                     <div class="register__form--block">
+                        <label for="nameRegister">Ім'я та прізвище</label>
+                        <input type="text" id="nameRegister" name="nameRegister">
+                        <p class="error__name--register">Введіть ім'я(не менше 6 символів)</p>
+                     </div><!--/.block-->
+                     <div class="register__form--block">
+                        <label for="emailRegister">Е-пошта</label>
+                        <input type="email" id="emailRegister" name="emailRegister">
+                        <p class="error__mail--register">Введіть коректну email адресу...</p>
+                     </div><!--/.block-->
+                     <div class="register__form--block">
+                        <label for="paswordRegister">Пароль</label>
+                        <input type="password" id="paswordRegister" name="paswordRegister">
+                        <p class="error__password--register">Вкажіть пароль (не менше 10 символів)</p>
+                     </div><!--/.block-->
+                     <div class="register__form--button">
+                        <button id="sendRegister" type="button">
+                           Відправити
+                           <i class="fas fa-paper-plane"></i>
+                        </button>
+                     </div><!--/.button-->
+                  </form><!--/.register__form-->
+                  <div class="register__oferta">
+                     <p>
+                        Підтверджуючи реєстрацію, я приймаю умови
+                     </p>
+                     <a href="pages/ugoda.html" target="_blank">
+                        користувальницької угоди
+                     </a>
+                  </div><!--/.register__oferta-->
+               </div><!--/.modal__register-->
+            </div><!--/.body-->
+         </div><!--modal__content-->
+         <div class="modal__recover">
+            <div class="modal__recover--body">
+               <div class="recover__close">
+                  <button type="button" id="recoverClose">
+                     <i class="fas fa-times"></i>
+                  </button>
+               </div><!--/.recover__close-->
+               <div class="recover__title">
+                  <h3>
+                     Відновлення паролю
+                  </h3>
+               </div><!--/.recover__title-->
+               <div class="recover__text">
+                  <p>
+                     Введіть адресу електронної пошти, яку ви вказали під 
+                     час реєстрації. Ми надішлемо листа з інформацією для відновлення паролю.
+                  </p>
+               </div><!--/.recover__text-->
+               <form data-action="#" class="revover__form" id="recoverForm">
+                  <div class="revover__form--block">
+                     <label for="emailRecover">Е-пошта</label>
+                     <input type="email" id="emailRecover" name="emailRecover">
+                     <p class="error__mail--recover">Введіть коректну email адресу...</p>
+                  </div><!--/.block-->
+                  <div class="revover__form--button">
+                     <button id="sendRecover" type="button">
+                        Відправити
+                        <i class="fas fa-paper-plane"></i>
+                     </button>
+                  </div><!--/.button-->
+               </form><!--/.recover__form-->
+            </div><!--/.body-->
+         </div><!--/.modal recover-->
+      </div><!--/.modak__mask-->
+   </div><!--/.modal-->
    <!--libs js conected-->
    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
    <script>window.jQuery || document.write('<script src="../js/vendor/jquery-3.4.1.min.js"><\/script>');</script>
@@ -398,5 +504,7 @@
    <script src="../js/main.js"></script>
    <!-- mail script -->
    <script src="../js/mail.js"></script>
+   <!-- modal script -->
+   <script src="../js/modal.js"></script>
 </body>
 </html>

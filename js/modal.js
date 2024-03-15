@@ -5,6 +5,7 @@ jQuery(document).ready(function () {
    var modalWindow = $(".modal");
    var modalMask = $(".modal__mask");
    var modalBody = $(".modal__content");
+   var recoverModalBody = $(".modal__recover");
    var modalClose = $("#modalClose");
    showModal.on("click", function (event) {
       event.preventDefault();
@@ -19,8 +20,27 @@ jQuery(document).ready(function () {
    modalMask.on("click", function () {
       modalWindow.removeClass("modal__open");
       $("body").removeAttr("style");
+      modalBody.removeClass("modal__content--active");
+      recoverModalBody.removeClass("modal__recover--active");
    });
-   modalBody.on("click", function(event){
+   modalBody.on("click", function (event) {
+      event.stopPropagation();
+   });
+   /*recover modal wondow scritp*/
+   var showRecoverBtn = $("#recoverPass");
+   var recoverCloseBtn = $("#recoverClose");
+   showRecoverBtn.on("click", function (event) {
+      event.preventDefault();
+      recoverModalBody.addClass("modal__recover--active");
+      modalBody.addClass("modal__content--active");
+   });
+   recoverCloseBtn.on("click", function () {
+      modalWindow.removeClass("modal__open");
+      $("body").removeAttr("style");
+      recoverModalBody.removeClass("modal__recover--active");
+      modalBody.removeClass("modal__content--active");
+   });
+   recoverModalBody.on("click", function (event) {
       event.stopPropagation();
    });
    /*switch tabs button*/
@@ -138,6 +158,42 @@ jQuery(document).ready(function () {
                $("#registerForm").trigger("reset");
             alert(data);
             btnRegister.prop("disabled", false);
+         }
+      });
+   });
+   /*recover pasword form script*/
+   var btnRecover = $("#sendRecover");
+   var recover_ajax_url = $("#recoverForm").attr('data-action');
+   btnRecover.on("click", function () {
+      var emailRecover = $("#emailRecover").val().trim(),
+         emailRecoverReg = /^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i;
+      if (!emailRecoverReg.test(emailRecover) || emailRecover == '') {
+         $(".error__mail--recover").css({
+            "opacity": "1",
+            "visibility": "visible"
+         });
+         return false;
+      }
+      $(".error__mail--recover").removeAttr("style");
+      $.ajax({
+         url: recover_ajax_url,
+         type: 'POST',
+         cache: false,
+         data: {
+            action: 'sendRecoverForm',
+            'emailRecover': emailRecover,
+         },
+         dataType: 'html',
+         beforeSend: function () {
+            btnRecover.prop("disabled", true);
+         },
+         success: function (data) {
+            if (!data)
+               alert("Щось не так ... Спробуйте ще раз!");
+            else
+               $("#recoverForm").trigger("reset");
+            alert(data);
+            btnRecover.prop("disabled", false);
          }
       });
    });

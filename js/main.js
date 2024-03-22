@@ -42,7 +42,7 @@ jQuery(document).ready(function () {
   var backTop = $("#backTop");
   var introHeight = $(".intro").height();
   $(window).on("scroll", function () {
-    if ($(this).scrollTop() >= (introHeight)) {
+    if ($(this).scrollTop() >= (introHeight || 800)) {
       backTop.addClass("back__top--active");
     } else {
       backTop.removeClass("back__top--active");

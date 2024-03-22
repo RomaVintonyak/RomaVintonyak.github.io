@@ -112,7 +112,7 @@
                      <p>Пн&ndash;Пт &mdash; 09:00 &ndash; 18:00</p>
                      <p>Сб&ndash;Нд &mdash; 11:00 &ndash; 15:00</p>
                   </div><!--/.time-->
-                  <a href="pages/basket.html" class="navbar__content--basket">
+                  <a href="basket.html" class="navbar__content--basket">
                      <i class="fas fa-shopping-cart"></i>
                      <p id="basketCount">00</p>
                   </a><!--/.basket-->
@@ -126,34 +126,34 @@
             <div class="header__product--row">
                <ul class="product__menu">
                   <li class="product__menu--item">
-                     <a href="catalog.html" class="product__menu--link" data-cat="shampo">Шампуні</a>
+                     <a href="catalog.html" class="product__menu--link" data-filter="shampo">Шампуні</a>
                   </li>
                   <li class="product__menu--item">
-                     <a href="catalog.html" class="product__menu--link" data-cat="masky">Маски</a>
+                     <a href="catalog.html" class="product__menu--link" data-filter="masky">Маски</a>
                   </li>
                   <li class="product__menu--item">
-                     <a href="catalog.html" class="product__menu--link" data-cat="kondycionery">Кондиціонери</a>
+                     <a href="catalog.html" class="product__menu--link" data-filter="kondycionery">Кондиціонери</a>
                   </li>
                   <li class="product__menu--item">
-                     <a href="catalog.html" class="product__menu--link" data-cat="termozahyst">Термозахист</a>
+                     <a href="catalog.html" class="product__menu--link" data-filter="termozahyst">Термозахист</a>
                   </li>
                   <li class="product__menu--item">
-                     <a href="catalog.html" class="product__menu--link" data-cat="nabory">Набори</a>
+                     <a href="catalog.html" class="product__menu--link" data-filter="nabory">Набори</a>
                   </li>
                   <li class="product__menu--item">
-                     <a href="catalog.html" class="product__menu--link" data-cat="tryhologia">Трихологія</a>
+                     <a href="catalog.html" class="product__menu--link" data-filter="tryhologia">Трихологія</a>
                   </li>
                   <li class="product__menu--item">
-                     <a href="catalog.html" class="product__menu--link" data-cat="ampuly">Ампули</a>
+                     <a href="catalog.html" class="product__menu--link" data-filter="ampuly">Ампули</a>
                   </li>
                   <li class="product__menu--item">
-                     <a href="catalog.html" class="product__menu--link" data-cat="cholovikam">Чоловікам</a>
+                     <a href="catalog.html" class="product__menu--link" data-filter="cholovikam">Чоловікам</a>
                   </li>
                   <li class="product__menu--item">
-                     <a href="catalog.html" class="product__menu--link" data-cat="grebinci">Гребінці</a>
+                     <a href="catalog.html" class="product__menu--link" data-filter="grebinci">Гребінці</a>
                   </li>
                   <li class="product__menu--item">
-                     <a href="catalog.html" class="product__menu--link" data-cat="kosmetyka">Косметика</a>
+                     <a href="catalog.html" class="product__menu--link" data-filter="kosmetyka">Косметика</a>
                   </li>
                </ul><!--/.product__menu-->
             </div><!--/.row-->
@@ -273,7 +273,7 @@
                            <button type="button" id="buyBtn">Купити</button>
                         </div><!--/.btn-->
                      </div><!--/.product__card-->
-                     <div class="product__card" data-cat="shampo">
+                     <div class="product__card" data-cat="tryhologia">
                         <div class="product__card--akcia" style="display: block;">
                            <span>
                               акція
@@ -282,8 +282,232 @@
                         <div class="product__card--img">
                            <a href="../pages/tovar.html">
                               <picture>
-                                 <source srcset="../img/main_slider/shampo.webp" type="image/webp">
-                                 <img src="../img/main_slider/shampo.jpg" alt="shampo" class="img">
+                                 <source srcset="../img/tovar/tryhologia.webp" type="image/webp">
+                                 <img src="../img/tovar/tryhologia.jpg" alt="shampo" class="img">
+                              </picture>
+                           </a>
+                        </div><!--/.img-->
+                        <div class="product__card--title">
+                           <p>
+                              Гель для всіх типів шкіри 
+                              DAILY ACT ALL SKIN TYPES
+                           </p>
+                        </div><!--/.title-->
+                        <div class="product__card--price">
+                           <span data-price="900">900</span>
+                           <span>грн</span>
+                        </div><!--/.price-->
+                        <div class="product__card--btn">
+                           <button type="button" id="buyBtn">Купити</button>
+                        </div><!--/.btn-->
+                     </div><!--/.product__card-->
+                     <div class="product__card" data-cat="tryhologia">
+                        <div class="product__card--akcia" style="display: block;">
+                           <span>
+                              акція
+                           </span>
+                        </div><!--/.akcia-->
+                        <div class="product__card--img">
+                           <a href="../pages/tovar.html">
+                              <picture>
+                                 <source srcset="../img/tovar/tryhologia.webp" type="image/webp">
+                                 <img src="../img/tovar/tryhologia.jpg" alt="shampo" class="img">
+                              </picture>
+                           </a>
+                        </div><!--/.img-->
+                        <div class="product__card--title">
+                           <p>
+                              Гель для всіх типів шкіри 
+                              DAILY ACT ALL SKIN TYPES
+                           </p>
+                        </div><!--/.title-->
+                        <div class="product__card--price">
+                           <span data-price="900">900</span>
+                           <span>грн</span>
+                        </div><!--/.price-->
+                        <div class="product__card--btn">
+                           <button type="button" id="buyBtn">Купити</button>
+                        </div><!--/.btn-->
+                     </div><!--/.product__card-->
+                     <div class="product__card" data-cat="ampuly">
+                        <div class="product__card--akcia" style="display: block;">
+                           <span>
+                              акція
+                           </span>
+                        </div><!--/.akcia-->
+                        <div class="product__card--img">
+                           <a href="../pages/tovar.html">
+                              <picture>
+                                 <source srcset="../img/tovar/ampuly.webp" type="image/webp">
+                                 <img src="../img/tovar/ampuly.jpg" alt="shampo" class="img">
+                              </picture>
+                           </a>
+                        </div><!--/.img-->
+                        <div class="product__card--title">
+                           <p>
+                              ampuly для всіх типів шкіри 
+                              DAILY ACT ALL SKIN TYPES
+                           </p>
+                        </div><!--/.title-->
+                        <div class="product__card--price">
+                           <span data-price="380">380</span>
+                           <span>грн</span>
+                        </div><!--/.price-->
+                        <div class="product__card--btn">
+                           <button type="button" id="buyBtn">Купити</button>
+                        </div><!--/.btn-->
+                     </div><!--/.product__card-->
+                     <div class="product__card" data-cat="cholovikam">
+                        <div class="product__card--akcia" style="display: block;">
+                           <span>
+                              акція
+                           </span>
+                        </div><!--/.akcia-->
+                        <div class="product__card--img">
+                           <a href="../pages/tovar.html">
+                              <picture>
+                                 <source srcset="../img/tovar/cholovikam.webp" type="image/webp">
+                                 <img src="../img/tovar/cholovikam.jpg" alt="shampo" class="img">
+                              </picture>
+                           </a>
+                        </div><!--/.img-->
+                        <div class="product__card--title">
+                           <p>
+                              cholovikam для всіх типів шкіри 
+                              DAILY ACT ALL SKIN TYPES
+                           </p>
+                        </div><!--/.title-->
+                        <div class="product__card--price">
+                           <span data-price="300">300</span>
+                           <span>грн</span>
+                        </div><!--/.price-->
+                        <div class="product__card--btn">
+                           <button type="button" id="buyBtn">Купити</button>
+                        </div><!--/.btn-->
+                     </div><!--/.product__card-->
+                     <div class="product__card" data-cat="grebinci">
+                        <div class="product__card--akcia" style="display: block;">
+                           <span>
+                              акція
+                           </span>
+                        </div><!--/.akcia-->
+                        <div class="product__card--img">
+                           <a href="../pages/tovar.html">
+                              <picture>
+                                 <source srcset="../img/tovar/grebinci.webp" type="image/webp">
+                                 <img src="../img/tovar/grebinci.jpg" alt="shampo" class="img">
+                              </picture>
+                           </a>
+                        </div><!--/.img-->
+                        <div class="product__card--title">
+                           <p>
+                              grebinci для всіх типів шкіри 
+                              DAILY ACT ALL SKIN TYPES
+                           </p>
+                        </div><!--/.title-->
+                        <div class="product__card--price">
+                           <span data-price="200">200</span>
+                           <span>грн</span>
+                        </div><!--/.price-->
+                        <div class="product__card--btn">
+                           <button type="button" id="buyBtn">Купити</button>
+                        </div><!--/.btn-->
+                     </div><!--/.product__card-->
+                     <div class="product__card" data-cat="grebinci">
+                        <div class="product__card--akcia" style="display: block;">
+                           <span>
+                              акція
+                           </span>
+                        </div><!--/.akcia-->
+                        <div class="product__card--img">
+                           <a href="../pages/tovar.html">
+                              <picture>
+                                 <source srcset="../img/tovar/grebinci.webp" type="image/webp">
+                                 <img src="../img/tovar/grebinci.jpg" alt="shampo" class="img">
+                              </picture>
+                           </a>
+                        </div><!--/.img-->
+                        <div class="product__card--title">
+                           <p>
+                              grebinci для всіх типів шкіри 
+                              DAILY ACT ALL SKIN TYPES
+                           </p>
+                        </div><!--/.title-->
+                        <div class="product__card--price">
+                           <span data-price="200">200</span>
+                           <span>грн</span>
+                        </div><!--/.price-->
+                        <div class="product__card--btn">
+                           <button type="button" id="buyBtn">Купити</button>
+                        </div><!--/.btn-->
+                     </div><!--/.product__card-->
+                     <div class="product__card" data-cat="grebinci">
+                        <div class="product__card--akcia" style="display: block;">
+                           <span>
+                              акція
+                           </span>
+                        </div><!--/.akcia-->
+                        <div class="product__card--img">
+                           <a href="../pages/tovar.html">
+                              <picture>
+                                 <source srcset="../img/tovar/grebinci.webp" type="image/webp">
+                                 <img src="../img/tovar/grebinci.jpg" alt="shampo" class="img">
+                              </picture>
+                           </a>
+                        </div><!--/.img-->
+                        <div class="product__card--title">
+                           <p>
+                              grebinci для всіх типів шкіри 
+                              DAILY ACT ALL SKIN TYPES
+                           </p>
+                        </div><!--/.title-->
+                        <div class="product__card--price">
+                           <span data-price="200">200</span>
+                           <span>грн</span>
+                        </div><!--/.price-->
+                        <div class="product__card--btn">
+                           <button type="button" id="buyBtn">Купити</button>
+                        </div><!--/.btn-->
+                     </div><!--/.product__card-->
+                     <div class="product__card" data-cat="grebinci">
+                        <div class="product__card--akcia" style="display: block;">
+                           <span>
+                              акція
+                           </span>
+                        </div><!--/.akcia-->
+                        <div class="product__card--img">
+                           <a href="../pages/tovar.html">
+                              <picture>
+                                 <source srcset="../img/tovar/grebinci.webp" type="image/webp">
+                                 <img src="../img/tovar/grebinci.jpg" alt="shampo" class="img">
+                              </picture>
+                           </a>
+                        </div><!--/.img-->
+                        <div class="product__card--title">
+                           <p>
+                              grebinci для всіх типів шкіри 
+                              DAILY ACT ALL SKIN TYPES
+                           </p>
+                        </div><!--/.title-->
+                        <div class="product__card--price">
+                           <span data-price="200">200</span>
+                           <span>грн</span>
+                        </div><!--/.price-->
+                        <div class="product__card--btn">
+                           <button type="button" id="buyBtn">Купити</button>
+                        </div><!--/.btn-->
+                     </div><!--/.product__card-->
+                     <div class="product__card" data-cat="masky">
+                        <div class="product__card--akcia" style="display: block;">
+                           <span>
+                              акція
+                           </span>
+                        </div><!--/.akcia-->
+                        <div class="product__card--img">
+                           <a href="../pages/tovar.html">
+                              <picture>
+                                 <source srcset="../img/tovar/masky.webp" type="image/webp">
+                                 <img src="../img/tovar/masky.jpg" alt="shampo" class="img">
                               </picture>
                            </a>
                         </div><!--/.img-->
@@ -294,14 +518,14 @@
                            </p>
                         </div><!--/.title-->
                         <div class="product__card--price">
-                           <span data-price="560">560</span>
+                           <span data-price="380">380</span>
                            <span>грн</span>
                         </div><!--/.price-->
                         <div class="product__card--btn">
                            <button type="button" id="buyBtn">Купити</button>
                         </div><!--/.btn-->
                      </div><!--/.product__card-->
-                     <div class="product__card" data-cat="shampo">
+                     <div class="product__card" data-cat="masky">
                         <div class="product__card--akcia" style="display: block;">
                            <span>
                               акція
@@ -310,8 +534,8 @@
                         <div class="product__card--img">
                            <a href="../pages/tovar.html">
                               <picture>
-                                 <source srcset="../img/main_slider/shampo.webp" type="image/webp">
-                                 <img src="../img/main_slider/shampo.jpg" alt="shampo" class="img">
+                                 <source srcset="../img/tovar/masky.webp" type="image/webp">
+                                 <img src="../img/tovar/masky.jpg" alt="shampo" class="img">
                               </picture>
                            </a>
                         </div><!--/.img-->
@@ -322,14 +546,243 @@
                            </p>
                         </div><!--/.title-->
                         <div class="product__card--price">
-                           <span data-price="560">560</span>
+                           <span data-price="380">380</span>
                            <span>грн</span>
                         </div><!--/.price-->
                         <div class="product__card--btn">
                            <button type="button" id="buyBtn">Купити</button>
                         </div><!--/.btn-->
                      </div><!--/.product__card-->
-                  </div><!--/.catalog__toveriv-->
+                     <div class="product__card" data-cat="kondycionery">
+                        <div class="product__card--akcia" style="display: block;">
+                           <span>
+                              акція
+                           </span>
+                        </div><!--/.akcia-->
+                        <div class="product__card--img">
+                           <a href="../pages/tovar.html">
+                              <picture>
+                                 <source srcset="../img/tovar/kondycionery.webp" type="image/webp">
+                                 <img src="../img/tovar/kondycionery.jpg" alt="shampo" class="img">
+                              </picture>
+                           </a>
+                        </div><!--/.img-->
+                        <div class="product__card--title">
+                           <p>
+                              Шампунь для всіх типів шкіри 
+                              DAILY ACT ALL SKIN TYPES
+                           </p>
+                        </div><!--/.title-->
+                        <div class="product__card--price">
+                           <span data-price="850">850</span>
+                           <span>грн</span>
+                        </div><!--/.price-->
+                        <div class="product__card--btn">
+                           <button type="button" id="buyBtn">Купити</button>
+                        </div><!--/.btn-->
+                     </div><!--/.product__card-->
+                     <div class="product__card" data-cat="termozahyst">
+                        <div class="product__card--akcia" style="display: block;">
+                           <span>
+                              акція
+                           </span>
+                        </div><!--/.akcia-->
+                        <div class="product__card--img">
+                           <a href="../pages/tovar.html">
+                              <picture>
+                                 <source srcset="../img/tovar/termozahyst.webp" type="image/webp">
+                                 <img src="../img/tovar/termozahyst.jpg" alt="shampo" class="img">
+                              </picture>
+                           </a>
+                        </div><!--/.img-->
+                        <div class="product__card--title">
+                           <p>
+                              Шампунь для всіх типів шкіри 
+                              DAILY ACT ALL SKIN TYPES
+                           </p>
+                        </div><!--/.title-->
+                        <div class="product__card--price">
+                           <span data-price="390">390</span>
+                           <span>грн</span>
+                        </div><!--/.price-->
+                        <div class="product__card--btn">
+                           <button type="button" id="buyBtn">Купити</button>
+                        </div><!--/.btn-->
+                     </div><!--/.product__card-->
+                     <div class="product__card" data-cat="termozahyst">
+                        <div class="product__card--akcia" style="display: block;">
+                           <span>
+                              акція
+                           </span>
+                        </div><!--/.akcia-->
+                        <div class="product__card--img">
+                           <a href="../pages/tovar.html">
+                              <picture>
+                                 <source srcset="../img/tovar/termozahyst.webp" type="image/webp">
+                                 <img src="../img/tovar/termozahyst.jpg" alt="shampo" class="img">
+                              </picture>
+                           </a>
+                        </div><!--/.img-->
+                        <div class="product__card--title">
+                           <p>
+                              Шампунь для всіх типів шкіри 
+                              DAILY ACT ALL SKIN TYPES
+                           </p>
+                        </div><!--/.title-->
+                        <div class="product__card--price">
+                           <span data-price="390">390</span>
+                           <span>грн</span>
+                        </div><!--/.price-->
+                        <div class="product__card--btn">
+                           <button type="button" id="buyBtn">Купити</button>
+                        </div><!--/.btn-->
+                     </div><!--/.product__card-->
+                     <div class="product__card" data-cat="termozahyst">
+                        <div class="product__card--akcia" style="display: block;">
+                           <span>
+                              акція
+                           </span>
+                        </div><!--/.akcia-->
+                        <div class="product__card--img">
+                           <a href="../pages/tovar.html">
+                              <picture>
+                                 <source srcset="../img/tovar/termozahyst.webp" type="image/webp">
+                                 <img src="../img/tovar/termozahyst.jpg" alt="shampo" class="img">
+                              </picture>
+                           </a>
+                        </div><!--/.img-->
+                        <div class="product__card--title">
+                           <p>
+                              Шампунь для всіх типів шкіри 
+                              DAILY ACT ALL SKIN TYPES
+                           </p>
+                        </div><!--/.title-->
+                        <div class="product__card--price">
+                           <span data-price="390">390</span>
+                           <span>грн</span>
+                        </div><!--/.price-->
+                        <div class="product__card--btn">
+                           <button type="button" id="buyBtn">Купити</button>
+                        </div><!--/.btn-->
+                     </div><!--/.product__card-->
+                     <div class="product__card" data-cat="nabory">
+                        <div class="product__card--akcia" style="display: block;">
+                           <span>
+                              акція
+                           </span>
+                        </div><!--/.akcia-->
+                        <div class="product__card--img">
+                           <a href="../pages/tovar.html">
+                              <picture>
+                                 <source srcset="../img/tovar/nabory.webp" type="image/webp">
+                                 <img src="../img/tovar/nabory.jpg" alt="shampo" class="img">
+                              </picture>
+                           </a>
+                        </div><!--/.img-->
+                        <div class="product__card--title">
+                           <p>
+                              Шампунь для всіх типів шкіри 
+                              DAILY ACT ALL SKIN TYPES
+                           </p>
+                        </div><!--/.title-->
+                        <div class="product__card--price">
+                           <span data-price="1500">1500</span>
+                           <span>грн</span>
+                        </div><!--/.price-->
+                        <div class="product__card--btn">
+                           <button type="button" id="buyBtn">Купити</button>
+                        </div><!--/.btn-->
+                     </div><!--/.product__card-->
+                     <div class="product__card" data-cat="nabory">
+                        <div class="product__card--akcia" style="display: block;">
+                           <span>
+                              акція
+                           </span>
+                        </div><!--/.akcia-->
+                        <div class="product__card--img">
+                           <a href="../pages/tovar.html">
+                              <picture>
+                                 <source srcset="../img/tovar/nabory.webp" type="image/webp">
+                                 <img src="../img/tovar/nabory.jpg" alt="shampo" class="img">
+                              </picture>
+                           </a>
+                        </div><!--/.img-->
+                        <div class="product__card--title">
+                           <p>
+                              Шампунь для всіх типів шкіри 
+                              DAILY ACT ALL SKIN TYPES
+                           </p>
+                        </div><!--/.title-->
+                        <div class="product__card--price">
+                           <span data-price="1500">1500</span>
+                           <span>грн</span>
+                        </div><!--/.price-->
+                        <div class="product__card--btn">
+                           <button type="button" id="buyBtn">Купити</button>
+                        </div><!--/.btn-->
+                     </div><!--/.product__card-->
+                     <div class="product__card" data-cat="kosmetyka">
+                        <div class="product__card--akcia" style="display: block;">
+                           <span>
+                              акція
+                           </span>
+                        </div><!--/.akcia-->
+                        <div class="product__card--img">
+                           <a href="../pages/tovar.html">
+                              <picture>
+                                 <source srcset="../img/tovar/kosmetyka.webp" type="image/webp">
+                                 <img src="../img/tovar/kosmetyka.jpg" alt="shampo" class="img">
+                              </picture>
+                           </a>
+                        </div><!--/.img-->
+                        <div class="product__card--title">
+                           <p>
+                              kosmetyka для всіх типів шкіри 
+                              DAILY ACT ALL SKIN TYPES
+                           </p>
+                        </div><!--/.title-->
+                        <div class="product__card--price">
+                           <span data-price="2300">2300</span>
+                           <span>грн</span>
+                        </div><!--/.price-->
+                        <div class="product__card--btn">
+                           <button type="button" id="buyBtn">Купити</button>
+                        </div><!--/.btn-->
+                     </div><!--/.product__card-->
+                     <div class="product__card" data-cat="kosmetyka">
+                        <div class="product__card--akcia" style="display: block;">
+                           <span>
+                              акція
+                           </span>
+                        </div><!--/.akcia-->
+                        <div class="product__card--img">
+                           <a href="../pages/tovar.html">
+                              <picture>
+                                 <source srcset="../img/tovar/kosmetyka.webp" type="image/webp">
+                                 <img src="../img/tovar/kosmetyka.jpg" alt="shampo" class="img">
+                              </picture>
+                           </a>
+                        </div><!--/.img-->
+                        <div class="product__card--title">
+                           <p>
+                              kosmetyka для всіх типів шкіри 
+                              DAILY ACT ALL SKIN TYPES
+                           </p>
+                        </div><!--/.title-->
+                        <div class="product__card--price">
+                           <span data-price="2300">2300</span>
+                           <span>грн</span>
+                        </div><!--/.price-->
+                        <div class="product__card--btn">
+                           <button type="button" id="buyBtn">Купити</button>
+                        </div><!--/.btn-->
+                     </div><!--/.product__card-->
+                  </div><!--/.catalog__tovariv-->
+                  <div class="pagination">
+                     <a class="pagination__link pagination__link--current" href="#">1</a>
+                     <a class="pagination__link" href="#">2</a>
+                     <a class="pagination__link" href="#">3</a>
+                  </div>
                </div><!--/.content-->
             </div><!--/.catalog__row-->
          </div><!--/.container-->
@@ -445,6 +898,9 @@
                      <p>Ми в соц мережах:</p>
                      <a href="https://www.instagram.com/beauty.prof.cosmetics_?igsh=bDlpMnpsOGJlbWw4" target="_blank">
                         <i class="fab fa-instagram"></i>
+                     </a>
+                     <a href="https://www.tiktok.com/@prof.cosmetics_?_t=8kiXyt8n2pB&_r=1" target="_blank">
+                        <i class="fab fa-tiktok"></i>
                      </a>
                   </div><!--/.adres__social-->
                </div><!--/.adres-->

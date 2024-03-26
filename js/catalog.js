@@ -22,7 +22,7 @@ jQuery(document).ready(function () {
    });
    /*pagination activ*/
    var paginBtn = $(".pagination__link");
-   paginBtn.on("click", function(event){
+   paginBtn.on("click", function (event) {
       event.preventDefault();
       paginBtn.removeClass("pagination__link--current");
       $(this).addClass("pagination__link--current");

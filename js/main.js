@@ -54,4 +54,25 @@ jQuery(document).ready(function () {
       scrollTop: 0,
     }, 1000, "swing");
   });
+  /*reviews form show script*/
+  var reviewsBtn = $("._reviewsUser");
+  reviewsBtn.on("click", function () {
+    $(this).parent(".reviews__answer")
+      .parent(".reviews__block--user")
+      .find(".reviews__form").css({
+        "display": "block"
+      });
+    $(this).parent(".reviews__answer")
+      .parent(".reviews__block--admin")
+      .find(".reviews__form").css({
+        "display": "block"
+      });
+  });
+  /*lightbox tovar galery*/
+  lightbox.option({
+    resizeDuration: 500,
+    fadeDuration: 500,
+    disableScrolling: true,
+    wrapAround: true,
+  })
 });

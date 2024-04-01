@@ -18,7 +18,7 @@ jQuery(document).ready(function () {
    var btnReviews = $(".reviewsButton");
    var reviews_ajax_url = $("[data-id]").attr('data-action');
    btnReviews.on("click", function () {
-      var reviewsName = $(".reviewsName").val().trim();
+      var reviewsName = $(this).parent("._reviewsForm").find(".reviewsName").val().trim();
       var reviewsEmail = $(".reviewsEmail").val().trim(),
          reviewsEmailAuthReg = /^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i;
       var reviewsText = $(".reviewsText").val().trim();

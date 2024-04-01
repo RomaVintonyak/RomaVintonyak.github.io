@@ -5,6 +5,7 @@ jQuery(document).ready(function () {
   burger.on("click", function (event) {
     event.preventDefault();
     $(this).toggleClass("burger__btn--active");
+    $(".nav__menu").toggleClass("nav__menu--open");
   });
   /*intro slider*/
   var introSlider = $("#introSlider");
@@ -37,6 +38,26 @@ jQuery(document).ready(function () {
     arrows: true,
     prevArrow: '<button type="button" class="product__slider--prev"><span></span></button>',
     nextArrow: '<button type="button" class="product__slider--next"><span></span></button>',
+    responsive: [
+      {
+        breakpoint: 1366,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 678,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
   /*back top button*/
   var backTop = $("#backTop");

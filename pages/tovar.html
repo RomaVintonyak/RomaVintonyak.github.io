@@ -206,8 +206,16 @@
                         </p>
                      </div><!--/.block__title-->
                      <div class="block__size">
-                        <input value="300" type="radio" name="size" id="sizeMl" checked>
-                        <label for="sizeMl">300 ml</label>
+                        <input value="100" type="radio" name="size" id="size100" checked>
+                        <label for="size100">100 ml</label>
+                        <input value="250" type="radio" name="size" id="size250">
+                        <label for="size250">250 ml</label>
+                        <input value="300" type="radio" name="size" id="size300">
+                        <label for="size300">300 ml</label>
+                        <input value="500" type="radio" name="size" id="size500">
+                        <label for="size500">500 ml</label>
+                        <input value="1000" type="radio" name="size" id="size1000">
+                        <label for="size1000">1000 ml</label>
                      </div><!--/.block__size-->
                      <div class="block__btn">
                         <button type="button" id="buyBtn">Купити</button>
@@ -337,7 +345,7 @@
                            </button>
                         </div><!--/.reviews__answer-->
                         <div class="reviews__form">
-                           <form data-id="reviewsForm" data-action="#" >
+                           <form class="_reviewsForm" data-id="reviewsForm" data-action="#" >
                               <input type="text" class="reviewsName" placeholder="Ім'я та прізвище">
                               <input type="email" class="reviewsEmail" placeholder="Е-пошта">
                               <textarea class="reviewsText" placeholder="Коментар"></textarea>
@@ -371,7 +379,7 @@
                            </button>
                         </div><!--/.reviews__answer-->
                         <div class="reviews__form">
-                           <form data-id="reviewsForm" data-action="#" >
+                           <form class="_reviewsForm" data-id="reviewsForm" data-action="#" >
                               <input type="text" class="reviewsName" placeholder="Ім'я та прізвище">
                               <input type="email" class="reviewsEmail" placeholder="Е-пошта">
                               <textarea class="reviewsText" placeholder="Коментар"></textarea>
@@ -405,7 +413,7 @@
                            </button>
                         </div><!--/.reviews__answer-->
                         <div class="reviews__form">
-                           <form data-id="reviewsForm" data-action="#" >
+                           <form class="_reviewsForm" data-id="reviewsForm" data-action="#" >
                               <input type="text" class="reviewsName" placeholder="Ім'я та прізвище">
                               <input type="email" class="reviewsEmail" placeholder="Е-пошта">
                               <textarea class="reviewsText" placeholder="Коментар"></textarea>
@@ -439,7 +447,7 @@
                            </button>
                         </div><!--/.reviews__answer-->
                         <div class="reviews__form">
-                           <form data-id="reviewsForm" data-action="#" >
+                           <form class="_reviewsForm" data-id="reviewsForm" data-action="#" >
                               <input type="text" class="reviewsName" placeholder="Ім'я та прізвище">
                               <input type="email" class="reviewsEmail" placeholder="Е-пошта">
                               <textarea class="reviewsText" placeholder="Коментар"></textarea>
@@ -702,5 +710,7 @@
    <script src="../js/modal.js"></script>
    <!-- reviews script -->
    <script src="../js/reviews.js"></script>
+   <!-- basket script -->
+   <script src="../js/basket.js"></script>
 </body>
 </html>

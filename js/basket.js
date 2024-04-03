@@ -9,7 +9,7 @@ jQuery(document).ready(function () {
    showBasketModal.on("click", function (event) {
       event.preventDefault();
       BasketmodalWindow.addClass("basket__modal--open");
-      $("body").css({ "overflow": "hidden" });
+      $("body").css({ "overflow-y;": ": scroll" });
    });
    BaasketmodalClose.on("click", function (event) {
       event.preventDefault();

@@ -36,8 +36,8 @@ jQuery(document).ready(function () {
     focusOnSelect: false,
     swipe: false,
     arrows: true,
-    prevArrow: '<button type="button" class="product__slider--prev"><span></span></button>',
-    nextArrow: '<button type="button" class="product__slider--next"><span></span></button>',
+    prevArrow: '<button type="button" class="product__slider--prev"><i class="fas fa-chevron-left"></i></button>',
+    nextArrow: '<button type="button" class="product__slider--next"><i class="fas fa-chevron-right"></i></button>',
     responsive: [
       {
         breakpoint: 1366,

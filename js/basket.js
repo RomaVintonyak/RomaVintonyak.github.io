@@ -1,28 +1,5 @@
 jQuery(document).ready(function () {
    "use script";
-   /*basket modal window*/
-   var showBasketModal = $("._basketBye");
-   var BasketmodalWindow = $(".basket__modal");
-   var BasketmodalMask = $(".basket__modal--mask");
-   var BasketmodalBody = $(".basket__modal--body");
-   var BaasketmodalClose = $("#basketModalClose");
-   showBasketModal.on("click", function (event) {
-      event.preventDefault();
-      BasketmodalWindow.addClass("basket__modal--open");
-      $("body").css({ "overflow-y;": ": scroll" });
-   });
-   BaasketmodalClose.on("click", function (event) {
-      event.preventDefault();
-      BasketmodalWindow.removeClass("basket__modal--open");
-      $("body").removeAttr("style");
-   })
-   BasketmodalMask.on("click", function () {
-      BasketmodalWindow.removeClass("basket__modal--open");
-      $("body").removeAttr("style");
-   });
-   BasketmodalBody.on("click", function (event) {
-      event.stopPropagation();
-   });
    /*tovar count item*/
    $("._tovarPrice").each(function () {
       var tovarPrice = $(this).text();

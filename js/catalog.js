@@ -21,10 +21,31 @@ jQuery(document).ready(function () {
       });
    });
    /*pagination activ*/
-   var paginBtn = $(".pagination__link");
+   var paginBtn = $(".page-numbers");
    paginBtn.on("click", function (event) {
       event.preventDefault();
-      paginBtn.removeClass("pagination__link--current");
-      $(this).addClass("pagination__link--current");
+      paginBtn.removeClass("current");
+      $(this).addClass("current");
+   });
+   /*sotr tovar in catalog*/
+   $("#popular").click(function () {
+      location.reload(true);
+   });
+   $("#lowPrice").click(function () {
+      var tovar = $(".product__card"),
+         catalog = $(".catalog__tovariv");
+      tovar.sort(function (tovar, catalog) {
+         return tovar.getAttribute("data-order") - catalog.getAttribute("data-order");
+      }),
+         tovar.detach().appendTo(catalog);
+   });
+   $("#heightPrice").click(function () {
+      var tovarH = $(".product__card"),
+         catalogH = $(".catalog__tovariv");
+      tovarH.sort(function (tovarH, catalogH) {
+         return catalogH.getAttribute("data-order") - tovarH.getAttribute("data-order");
+      }),
+         tovarH.detach().appendTo(catalogH);
    });
 });
+

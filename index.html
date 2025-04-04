@@ -268,6 +268,16 @@
           <div class="font__preview _modalPreview">
             Happy Birthday
           </div><!--/.font__preview-->
+          <div class="text__size">
+            <p>Орієнтовний розмір (Ш х В):</p>
+            <div class="text__size--block">
+              <span class="_sizeW">26</span>
+              <span>см.</span>
+              <span>&times;</span>
+              <span class="_sizeH">13</span>
+              <span>см.</span>
+            </div><!--/.block-->
+          </div>
         </div><!--/.title-->
         <div class="modal__body--form">
           <form action="#" method="post" id="modalForm" class="modal__form">
@@ -275,18 +285,18 @@
               <label for="fontLine">Шрифт</label>
               <input type="text" id="fontLine" name="fontLine" value="" disabled>
             </div><!--/.block-->
-            <div class="modal__form--block">
+            <div class="modal__form--block" id="materialList">
               <label for="materialBlock">Матеріал</label>
               <select id="materialBlock">
-                <option value="Дзеркальний полістирол 1мм" selected>Дзеркальний полістирол 1мм</option>
+                <option value="Дзеркальний полістирол 1мм">Дзеркальний полістирол 1мм</option>
                 <option value="ФК Фанера 4мм">ФК Фанера 4мм</option>
                 <option value="ФК Фанера 6мм">ФК Фанера 6мм</option>
               </select>
             </div><!--/.block-->
-            <div class="modal__form--block">
+            <div class="modal__form--block" id="colorList">
               <label for="colorBlock">Колір</label>
               <select id="colorBlock">
-                <option value="золотий" selected>золотий</option>
+                <option value="золотий">золотий</option>
                 <option value="срібний">срібний</option>
                 <option value="білий">білий</option>
                 <option value="чорний">чорний</option>
@@ -299,6 +309,26 @@
                 <option value="Магніт">Магніт</option>
               </select>
             </div><!--/.block-->
+            <div class="modal__form--size">
+              <span>
+                Розмір:
+              </span>
+              <input type="number" placeholder="26" id="size-w">
+              <span>&times;</span>
+              <input type="number" placeholder="13" id="size-h">
+              <span>
+                см.
+              </span>
+            </div>
+            <div class="modal__form--price">
+              <p>
+                Ціна:
+              </p>
+              <div class="price__block">
+                <span class="_price"></span>
+                <span>грн.</span>
+              </div><!--/.price__block-->
+            </div><!--/.price-->
             <div class="modal__form--block">
               <label for="nameLine">Ім'я та прізвище</label>
               <input type="text" id="nameLine" name="nameLine">
